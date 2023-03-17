@@ -7,6 +7,7 @@ function Navbar() {
             <div className='link'><Link to="./">Home</Link></div>
             <div className='link'><Link to="./currconv">Currency Converter</Link></div>
             <div className='link'><Link to="./phonebook">Phonebook</Link></div>
+            <div className='link'><Link to="./tictactoe">Tictactoe</Link></div>
         </div>
     )
 }
