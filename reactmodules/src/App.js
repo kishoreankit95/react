@@ -5,6 +5,7 @@ import Converter from './currencyConverter/Converter';
 import Navbar from './home/Navbar';
 import Home from './home/index';
 import Box from './tictactoe/Box';
+import Chat from './chatSupport/Chat';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/phonebook" element={<PhoneBookForm/>} />
           <Route exact path="/currconv" element={<Converter/>} />
           <Route exact path="/tictactoe" element={<Box/>} />
+          <Route exact path="/chatsupport" element={<Chat/>} />
         </Routes>
         {/* <p>
           <Link to="./currconv">Currency Converter</Link>

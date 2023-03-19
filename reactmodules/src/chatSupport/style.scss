@@ -1,0 +1,124 @@
+.outer {
+    text-align: center;
+    padding: 60px 0 0 0;
+    box-sizing: border-box
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imgWrapper{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+.chatHeading{
+    input:focus{
+        border-bottom: 1px solid black
+    }
+}
+
+.chatWindow{
+    border: 2px solid black;
+    min-height: 700px;
+}
+
+
+.chatElem{
+    border-top: 1px solid #e5e2e2;
+    // border-bottom: 1px solid grey;
+}
+
+.chatFirst{
+    &.half{
+        width: 50%;
+    }
+}
+.chatSecond{
+    background-color: #ebeaea;
+    .heading{
+        max-height: 60px
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 100px);
+        position: relative;
+        .upper{
+            height: calc(100% - 20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 15px;
+            .bot{
+                text-align: left;
+                
+                
+            }
+            .sender{
+                text-align: right;
+            }
+            .msg{
+                max-width: 250px;
+                padding: 10px;
+                background: #027CD5;
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+        .lower{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: left;
+            input{
+                width: calc(100% - 50px);
+                height: 20px;
+            }
+            button{
+                height: 23px;
+            }
+        }
+    }
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+.d-flex{
+    display: flex;
+}
+.fldc{
+    flex-direction: column;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.alc{
+    align-items: center;
+}
+.mt10{
+    margin-top: 10px;
+}
+.pd10{
+    padding: 10px;
+}
+.pd20{
+    padding: 20px;
+}
+
+.taLeft{
+    text-align: left;
+}
