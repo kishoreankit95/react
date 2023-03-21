@@ -1,10 +1,15 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 function IndivChat(props) {
     
 
-    const [inMessage, setinMessage] = useState([...props.data.messageList]);
+    const [inMessage, setinMessage] = useState([]);
+
+    useEffect(() => {
+        setinMessage((p) => {return props.data.messageList});
+    });
     
+    console.log("Indivchat.js");
     console.log(inMessage);
     const buttonHanlder = () => {
 
@@ -21,19 +26,20 @@ function IndivChat(props) {
         </div>
         
         <div className='body'>
-            <div className='upper'>
+            <div className={inMessage.length>0?"upper bottom" : "upper center"}>
                 {inMessage.length>0 ? (                    
                         inMessage.map((ele) => {
                             return (
-                                <div className={ele.sender === "BOT"? "bot w100" : "sender w100"}>
-                                    <div key={ele.messageId} className="msg">
-                                        {ele.message}
+                                <div key={ele.messageId} className="">
+                                    <div  className={ele.sender === "BOT"? "bot w100" : "sender w100"}>
+                                        <div className="msg">
+                                            {ele.message}
+                                        </div>
                                     </div>
                                 </div>
-                            
                             )
                         })                    
-                ) : "Send a message to start chatting"}
+                ) : (<div className=''>Send a message to start chatting</div>)}
             </div>
             <div className='lower'>
                 <input type="text" placeholder='Type a Message...' />

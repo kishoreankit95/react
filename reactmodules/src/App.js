@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       
-      {/* <PhoneBookForm /> */}
       <div>
         <Navbar />
         <Routes>
@@ -21,12 +20,6 @@ function App() {
           <Route exact path="/tictactoe" element={<Box/>} />
           <Route exact path="/chatsupport" element={<Chat/>} />
         </Routes>
-        {/* <p>
-          <Link to="./currconv">Currency Converter</Link>
-        </p>
-        <p>
-          <Link to="./phonebook">Phonebook</Link>
-        </p>         */}
       </div>
     </div>
   )
