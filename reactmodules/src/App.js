@@ -6,6 +6,7 @@ import Navbar from './home/Navbar';
 import Home from './home/index';
 import Box from './tictactoe/Box';
 import Chat from './chatSupport/Chat';
+import Display from './quizGame/Display';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/currconv" element={<Converter/>} />
           <Route exact path="/tictactoe" element={<Box/>} />
           <Route exact path="/chatsupport" element={<Chat/>} />
+          <Route exact path="/quizgame" element={<Display/>} />
         </Routes>
       </div>
     </div>
