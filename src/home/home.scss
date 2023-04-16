@@ -1,0 +1,53 @@
+.navbar{
+    background: black;
+    display: flex;
+    padding: 20px 40px;
+    .link{
+        margin-right: 20px;
+    }
+    a{
+        color: #fff;
+    }
+}
+
+.welcome{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 600;
+    color: #f3ae2e;
+    text-transform: capitalize;
+}
+
+.list{
+    list-style: inside;
+    text-align: left;
+    padding: 0;
+    li{
+        margin: 10px 0 0 0;
+        .head{
+            color: #eb307c;
+        }
+    }
+}
+
+
+.ta-left{
+    text-align: left;
+}
+
+.mrg-0{
+    margin: 0;
+}
+.mt-50{
+    margin-top: 50px;
+}
+
+.d-block{
+    display: block;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
