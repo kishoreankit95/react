@@ -15,7 +15,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/react" element={<Home />} />
           <Route exact path="/phonebook" element={<PhoneBookForm/>} />
           <Route exact path="/currconv" element={<Converter/>} />
           <Route exact path="/tictactoe" element={<Box/>} />
