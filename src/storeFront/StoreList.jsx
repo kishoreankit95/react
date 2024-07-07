@@ -3,6 +3,7 @@ import AggridComp from '../components/AggridComp';
 import * as gridDatas from "../data/data.json";
 import {useNavigate} from "react-router-dom";
 import { ContextDispatch } from '../App';
+import Container from "../components/Container";
 
 const StoreList = ({}) => {
 
@@ -79,12 +80,14 @@ const StoreList = ({}) => {
     }
 
     return (
-        <div>
-            <AggridComp
-                columnData = {colData}
-                rowData={gridData}
-                gridOptns={gridOptions}
-            />
+        <div className='mt-50'>
+            <Container>
+                <AggridComp
+                    columnData = {colData}
+                    rowData={gridData}
+                    gridOptns={gridOptions}
+                />
+            </Container>
         </div>
     )
 }

@@ -63,7 +63,9 @@
   overflow: hidden;
   text-decoration: none;
   cursor: pointer;
-  height: 35px;
+  height: 30px;
+  width: 70px;
+  line-height: 20px;
   &:hover{
     background-color: #088255;
   }
@@ -77,6 +79,9 @@
 .my-50{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.mt-50{
+  margin-top: 50px;
 }
 
 .mr-20{
