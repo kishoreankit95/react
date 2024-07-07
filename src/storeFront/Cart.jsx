@@ -75,7 +75,7 @@ const Cart = () => {
       stateImport.stateChanger({type: "cEmail", value: emailRef.current.value});
       stateImport.stateChanger({type: "cNumber", value: numRef.current.value});
       stateImport.stateChanger({type: "ccNumber", value: ccNumRef.current.value});
-      navigate("/orders");
+      navigate("/storefront/orders");
     }
   }, [error])
 

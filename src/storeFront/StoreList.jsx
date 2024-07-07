@@ -25,7 +25,7 @@ const StoreList = ({}) => {
         stateImport.stateChanger({type: "productSelect", value: item.data})
         stateImport.stateChanger({type: "actPrice", value: item.data.actualPrice
         });
-        navigate("/cart");
+        navigate("/storefront/cart");
     }
 
     const buyBtnRenderer = (params) => {
