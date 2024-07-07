@@ -10,6 +10,7 @@ function Navbar() {
             <div className='link'><Link to="./tictactoe">Tictactoe</Link></div>
             <div className='link'><Link to="./chatsupport">Chat Support</Link></div>
             <div className='link'><Link to="./quizgame">Quiz Game</Link></div>
+            <div className='link'><Link to="./storefront">Store Front</Link></div>
         </div>
     )
 }
