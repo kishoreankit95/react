@@ -9,6 +9,8 @@ import Box from './tictactoe/Box';
 import Chat from './chatSupport/Chat';
 import Display from './quizGame/Display';
 import StoreList from "./storeFront/StoreList";
+import Cart from "./storeFront/Cart";
+import Orders from "./storeFront/Orders";
 import {reducer} from "./reducers/Reducer";
 
 export const ContextDispatch = React.createContext();
@@ -41,6 +43,8 @@ function App() {
             <Route exact path="/chatsupport" element={<Chat/>} />
             <Route exact path="/quizgame" element={<Display/>} />
             <Route exact path="/storefront" element={<StoreList/>} />
+            <Route exact path="/storefront/cart" element={<Cart/>} />
+            <Route exact path="/storefront/orders" element={<Orders/>} />
           </Routes>
         </ContextDispatch.Provider>
       </div>

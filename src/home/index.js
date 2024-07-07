@@ -33,6 +33,10 @@ function Home() {
             <span className='mrg-0 head'>Quiz Game</span>
             <span className='d-block'> It is about a Quiz game where you can try your luck and get a score at last</span>
           </li>
+          <li>
+            <span className='mrg-0 head'>Store Front</span>
+            <span className='d-block'> A small mini store where you can pick an item and move towards order placement</span>
+          </li>
         </ul>
       </div>
     </div>
